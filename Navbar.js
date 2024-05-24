@@ -11,7 +11,6 @@ function Navbar() {
     localStorage.removeItem('userid');
     navigate('/');
   };
-
   return (
     <nav className="navbar navbar-expand-sm bg-info navbar-dark">
       
@@ -24,19 +23,19 @@ function Navbar() {
         </div>
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link className="nav-link" to="/adminhome">Home</Link>
+            <Link className="nav-link" to="/userhome">Home</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/services">Services</Link>
+            <Link className="nav-link" to="/viewservices">Services</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/slot">Slot</Link>
+            <Link className="nav-link" to="/booking">Book</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/viewuser">Registrations</Link>
+            <Link className="nav-link" to="/userbooking">My Booking</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/viewbookings">Bookings</Link>
+            <Link className="nav-link" to="/feedback">Add Feedback</Link>
           </li>
           <li className="nav-item">
             <button className="nav-link btn btn-link" onClick={handleLogout}>
@@ -48,7 +47,6 @@ function Navbar() {
     </nav>
   );
 }
-
 
 export default Navbar;
 

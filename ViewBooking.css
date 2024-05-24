@@ -1,62 +1,72 @@
-.view-booking-container {
-    background-color: #f5f5f5;
-    min-height: 100vh;
+.viewbookings {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 2rem; */
   }
   
-  .view-booking-content {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    width: 100%;
-    max-width: 1000px;
-  }
-  
-  .view-booking-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .view-booking-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 1.1rem;
-  }
-  
-  .view-booking-table th,
-  .view-booking-table td {
-    padding: 1rem;
+  .viewbooking {
+    width: 80%;
+    /* border: 1px solid #ccc; */
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    box-shadow: 0 0 0 0.2rem rgba(186, 188, 189, 0.25);
+
   }
-  
-  .view-booking-table th {
-    background-color: #f5f5f5;
-    color: #333;
+  h1{
+    font-size: 14px;
   }
-  
-  .view-booking-table td {
-    color: #555;
+
+  .viewbooking-date-box{
+
+    display: flex;
+    justify-content: start;
+    gap: 5rem;
+
   }
+   
+  .viewbooking-box-service-card{
+
+    border-radius: 5px;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 1rem ;
+    margin-top: 1rem;
+  }
+
+  .viewbooking-box-service-card div h3{
+
+    font-size: 14px;
   
-  .btn-danger {
-    background-color: #dc3545;
-    color: #fff;
+  }
+  .viewbooking-box-service-card div p{
+
+    font-size: 12px;
+  
+  }
+  .viewbooking-box-service-card div .price{
+
+    font-size: 16px;
+    font-weight: bold;
+  
+  }
+
+
+  .viewbooking-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .viewbooking-card-header button{
+    background-color: #6497e4;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
     border: none;
-    padding: 0.25rem 0.5rem;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 5px;
+    
   }
-  
-  .btn-danger:hover {
-    background-color: #c82333;
-  }
-  
